@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <View style={styles.header}>
-      <Text styles={styles.title}>Header</Text>
+      <Text style={styles.title}>Header</Text>
     </View>
   )
 }
