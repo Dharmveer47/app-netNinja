@@ -14,7 +14,7 @@ const AddTodo = ({ sumbitHander }) => {
         onChangeText={changeHandler}
       />
       <Button
-        onPress={() => sumbitHander(text)}
+        onPress={() => sumbitHander(text,setText)}
         title="add Todo"
         color="coral"
       />
