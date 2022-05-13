@@ -24,18 +24,16 @@ export default function App() {
     });
   };
 
-  const sumbitHander = (text, setText) => {
+  const sumbitHander = (text) => {
     if (text.length > 3) {
       setTodo((prevTodo) => {
         return [{ text: text, key: Date.now() }, ...prevTodo];
       });
-      setText("")
     } else {
       Alert.alert("Opps !", "Todos must be over 3 chars Long", [
         { text: "Understood", onPress: () => console.log("alert closed") },
       ]);
     }
-    setText("");
   };
 
   return (
